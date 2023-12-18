@@ -1,13 +1,21 @@
 #include<stdio.h>
-
 int main(){
-  int x, hra, da, ta;
-	printf("enter your salary ");
-	scanf("%d",&x);
-  
-	printf("\nhra %d",hra = x*10/100);
-	printf("\nda %d",da = x*5/100);
-	printf("\nta %d",ta = x*8/100);
-  
-  return 0;
+    int salary;
+	float hra,da,ta,gross_salary;
+	printf("enter your basic salary");
+	scanf("%d",&salary);
+
+	hra = (float)salary*10/100;
+	da = (float)salary*5/100;
+	ta = (float)salary*7/100;
+
+	printf("\n hra is %.2f",hra);
+	printf("\n da is %.2f",da);
+	printf("\n ta is %.2f",ta);
+
+	gross_salary = salary+hra+da+ta; 
+
+	printf("\n total salary is %.2f",gross_salary); 
+  
+  	return 0;
 }
