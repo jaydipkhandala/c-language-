@@ -1,5 +1,5 @@
 //2.WAP to find length of 2D array.
-// length of 2D array.
+
 #include<stdio.h>
 int main(){
     int a[20][20],i,j,m,n,count=0;
